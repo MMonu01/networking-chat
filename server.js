@@ -42,6 +42,6 @@ server.on("connection", (socket) => {
   clients.push({ id: client_id, socket });
 });
 
-server.listen(3008, "127.0.0.1", () => {
+server.listen(3008, "localhost", () => {
   console.log("Server is running at", server.address());
 });
